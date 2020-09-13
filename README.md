@@ -26,7 +26,6 @@ def lambda_handler(event, context):
     led_status =event['currentIntent']['slots']['slotOne']
     led_status = led_status.upper()
     response = client.publish(topic='home/room/light',qos=1,payload=json.dumps({"message":"LED "+led_status}))
-
     # TODO implement
     response = {
         "dialogAction": 
