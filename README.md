@@ -27,6 +27,9 @@ To communicate with nodeMCU I have created a facebook page and is linked with Am
 
 Raspberry pi will process that temperature data and check whether it is greater than threshold. if yes it will set a flag. when ever there is a change in flag vakue t will publish 'home/room/light' whith data to NodeMCU 
 
+## MQTT Payload 
+I have used json data as MQTT payload since it is very easy to serialize and deserialize data and have  built-in data type which can be used very easily with json like dictionary in python  associative arrays in PHP etc
+
 # Technology Used
-I2C, MQTT, AWS IoT Core, AWS lambda, AWS lex
+I2C, MQTT, AWS IoT Core, AWS lambda, AWS lex, json 
 
