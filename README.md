@@ -1,4 +1,4 @@
-# Programming-for-the-Internet-of-Things-Project
+# Home Automation Using Facebook Messenger and AWS IoT Core
 Capstone course  An Introduction to Programming the Internet of Things (IOT),  University of California, Irvine
 
 # Overview
