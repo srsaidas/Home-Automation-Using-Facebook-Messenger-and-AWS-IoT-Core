@@ -21,9 +21,7 @@ To communicate with nodeMCU I have created a facebook page and is linked with Am
 
 `import json
 import boto3
-
-def lambda_handler(event, context):
-    
+def lambda_handler(event, context):    
     client = boto3.client('iot-data')
     led_status =event['currentIntent']['slots']['slotOne']
     led_status = led_status.upper()
@@ -40,7 +38,6 @@ def lambda_handler(event, context):
             }
         }
 };
-
 `
  
  ## DHT 11 to Relay 
