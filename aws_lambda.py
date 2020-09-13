@@ -1,4 +1,4 @@
-import json
+ import json
 import boto3
 
 def lambda_handler(event, context):
@@ -15,9 +15,10 @@ def lambda_handler(event, context):
             "fulfillmentState": "Fulfilled",
             "message": {
                 "contentType": "PlainText",
-                "content": "Your light is " + led_status
+                "content": "Your fan  is " + led_status
             }
         }
 };
     return response
   
+ 
