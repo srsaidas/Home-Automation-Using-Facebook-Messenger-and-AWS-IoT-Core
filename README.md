@@ -14,7 +14,7 @@ Home automation is a very old concept but by the introduction of IoT the home au
 
 # Working 
 ## Facebook to Relay
-To communicate with nodeMCU I have created a facebook page and is linked with Amazon lex. lex will identify the message and send a command to AWS lambda to publish a MQTT topic 'home/room/light'. The node MCU is subscribe to this topic and run the command to turn on or off the relay.
+To communicate with nodeMCU I have created a facebook page and is linked with Amazon lex. lex will identify the message and send a command to AWS lambda to publish a MQTT topic 'home/room/light' with payload corresponding to facebook message. The node MCU is subscribe to this topic and run the command to turn on or off the relay.
 
 ![Facebook Message](https://github.com/srsaidas/Programming-for-the-Internet-of-Things-Project/blob/master/image/fb_message.png)
  When I typed on/off fan, fan on/off, switch on/off fan ( I have added these commands we can add more) it will trigger MQTT broker to publish the topic  'home/room/light' 
