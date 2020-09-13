@@ -26,3 +26,7 @@ To communicate with nodeMCU I have created a facebook page and is linked with Am
  In this project, I have connected DHT11 Sensor (Temperature Humidity Sensor ) is connected to Arduino UNO.  and UNO is connected to Raspberry Pi. I have used I2C communication between UNO and Raspberry pi where Raspberry Pi is the master and UNO is slave. every 5 sec Master(Raspberry pi) will send a Write request to slave (UNO). Up receiving it will read the temperature using DHT11. and send that information to Raspberry pi
 
 Raspberry pi will process that temperature data and check whether it is greater than threshold. if yes it will set a flag. when ever there is a change in flag vakue t will publish 'home/room/light' whith data to NodeMCU 
+
+# Technology Used
+I2C, MQTT, AWS IoT Core, AWS lambda, AWS lex
+
