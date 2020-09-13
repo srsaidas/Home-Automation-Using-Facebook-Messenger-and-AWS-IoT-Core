@@ -19,27 +19,7 @@ To communicate with nodeMCU I have created a facebook page and is linked with Am
 ![Facebook Message](https://github.com/srsaidas/Programming-for-the-Internet-of-Things-Project/blob/master/image/fb_message.png)
  When I typed on/off fan, fan on/off, switch on/off fan ( I have added these commands we can add more) it will trigger MQTT broker to publish the topic  'home/room/light' 
 
-`import json
-import boto3
-
-def lambda_handler(event, context):
-    
-    client = boto3.client('iot-data')
-    led_status =event['currentIntent']['slots']['slotOne']
-    led_status = led_status.upper()
-    response = client.publish(topic='home/room/light',qos=1,payload=json.dumps({"message":"LED "+led_status}))
-
-    # TODO implement
-    response = {
-        "dialogAction": 
-            {"type": "Close",
-            "fulfillmentState": "Fulfilled",
-            "message": {
-                "contentType": "PlainText",
-                "content": "Your fan  is " + led_status
-            }
-        }
-};
+`    response = client.publish(topic='home/room/light',qos=1,payload=json.dumps({"message":"LED "+led_status}))
 `
  
  ## DHT 11 to Relay 
