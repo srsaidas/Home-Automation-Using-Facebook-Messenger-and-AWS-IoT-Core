@@ -33,3 +33,4 @@ I have used json data as MQTT payload since it is very easy to serialize and des
 # Technology Used
 I2C, MQTT, AWS IoT Core, AWS lambda, AWS lex, json 
 
+# Working 
