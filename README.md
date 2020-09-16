@@ -1,4 +1,4 @@
-# Home Automation Using Facebook Messenger and AWS IoT Core
+# Facebook Messenger and AWS IoT Core for Home Automation
 Capstone course  An Introduction to Programming the Internet of Things (IOT),  University of California, Irvine
 
 # Overview
